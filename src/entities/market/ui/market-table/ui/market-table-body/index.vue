@@ -45,7 +45,10 @@ const secondaryCurrency = computed(() => currencyStore.getCurrency(item.value.se
   </BaseTableColumn>
 
   <BaseTableColumn>
-    <BaseGraph :color="marketModel.isDirectionUp(item.priceChange) ? 'darkgreen' : 'darkred'" :data=item.priceHistory />
+    <BaseGraph
+      :color="marketModel.isDirectionUp(item.priceChange) ? 'darkgreen' : 'darkred'"
+      :data="item.priceHistory"
+    />
   </BaseTableColumn>
 </template>
 
