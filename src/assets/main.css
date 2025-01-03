@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+  max-width: 1280px;
+  @apply mx-auto font-mono;
+}
+
+table {
+  @apply w-full;
+}
+
+table thead,
+table tr:nth-child(even) {
+  @apply bg-gray-100;
+}
+
+table th {
+  @apply border border-t-0 border-black;
+}
+
+table td {
+  @apply pr-4;
+}
